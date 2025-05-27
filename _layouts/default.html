@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ page.title | default: site.title }}</title>
     <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   </head>
   <body>
     <div class="wrapper">
+      <!-- Optional header: uncomment if you want a visible title/description -->
       <!--
       <header>
-        <h1>{{ site.title }}</a></h1>
+        <h1>{{ site.title }}</h1>
         <p>{{ site.description }}</p>
       </header>
       -->
@@ -23,6 +23,6 @@
         <p>&copy; {{ site.time | date: "%Y" }} {{ site.author.name }}</p>
       </footer>
     </div>
-    <script src="/scripts.js"></script>
+    <script src="{{ '/scripts.js' | relative_url }}"></script>
   </body>
 </html>
