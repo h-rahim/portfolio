@@ -8,7 +8,6 @@ title: Portfolio
 ## Portfolio
 
 <details>
-  
 <summary><strong>UK Ministry of Justice</strong></summary>
   <details>
   <summary><strong>Analytical Platform User Guidance</strong></summary>
@@ -16,7 +15,9 @@ title: Portfolio
   <details>
   <summary><strong>MkDocs Tech Docs Template</strong></summary>
   </details>
+</details>
 
+<details>
 <summary><strong>Moogsoft</strong></summary>
   <details>
   <summary><strong>Integration Guides</strong></summary>
@@ -24,5 +25,5 @@ title: Portfolio
   <details>
   <summary><strong>Workflow Engine</strong></summary>
   </details>  
-
 </details>
+
