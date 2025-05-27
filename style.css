@@ -40,7 +40,7 @@ details summary::before {
 }
 
 details[open] summary::before {
-  content: "×"; /* or "-" if you prefer */
+  content: "-"; /* or "x" if you prefer */
 }
 
 details[open] > *:not(summary) {
