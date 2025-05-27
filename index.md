@@ -8,7 +8,7 @@ title: Portfolio
 ## Portfolio
 
 <details>
-<summary><strong>UK Ministry of Justice</strong></summary>
+<summary><strong>Ministry of Justice</strong></summary>
   <details>
   <summary><strong>Analytical Platform User Guidance</strong></summary>
   </details>
