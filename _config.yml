@@ -1,4 +1,5 @@
 title: Haymon Rahim
+title-block-banner-color: black
 show_downloads: false
 theme: jekyll-theme-minimal
-mainfont: Palatino Linotype
+mainfont: Helvetica
