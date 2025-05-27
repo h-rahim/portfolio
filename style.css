@@ -38,3 +38,12 @@ details summary::before {
 details[open] summary::before {
   content: "×"; /* or use "-" if you prefer */
 }
+
+details details {
+  padding-left: 1.5em;  /* indent nested details */
+}
+
+details details summary {
+  padding-left: 0.5em; /* slight indent for nested summary text */
+}
+
