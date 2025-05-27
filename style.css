@@ -43,14 +43,6 @@ details[open] summary::before {
   content: "×"; /* or "-" if you prefer */
 }
 
-/* Fade and slide animation for expanding content */
-details > *:not(summary) {
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease, opacity 0.4s ease;
-}
-
 details[open] > *:not(summary) {
   max-height: 500px; /* adjust as needed */
   opacity: 1;
@@ -69,3 +61,19 @@ details details > *:not(summary) {
 details {
   margin-bottom: 0.25em;
 }
+
+.fade-in {
+  animation: fadeIn 0.4s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
