@@ -28,7 +28,7 @@ details summary {
   cursor: pointer;
   position: relative;
   padding-left: 1.5em;
-  margin-bottom: 0.75em; /* consistent spacing below every heading */
+  margin-bottom: 1.5em; /* consistent spacing below every heading */
 }
 
 /* Expand/collapse icon */
