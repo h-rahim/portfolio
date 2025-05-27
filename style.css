@@ -1,20 +1,18 @@
-<style>
-  body {
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    color: black;
-  }
+body, html {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif !important;
+  color: black !important;
+}
 
-  h1, h2, h3, h4, h5, h6 {
-    color: black;
-  }
+a {
+  color: black !important;
+  text-decoration: none !important;
+}
 
-  a {
-    color: black;
-    text-decoration: none;
-  }
+a:hover {
+  color: black !important;
+  text-decoration: underline !important;
+}
 
-  a:hover {
-    color: black; /* 👈 stays black on hover */
-    text-decoration: underline;
-  }
-</style>
+h1, h2, h3, h4, h5, h6 {
+  color: black !important;
+}
