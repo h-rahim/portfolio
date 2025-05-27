@@ -16,3 +16,21 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   color: black !important;
 }
+
+details summary {
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+  padding-left: 1.5em;
+}
+
+details summary::before {
+  content: "+";
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+details[open] summary::before {
+  content: "×"; /* or use "-" if you prefer */
+}
