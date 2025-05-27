@@ -28,7 +28,7 @@ details summary {
   cursor: pointer;
   position: relative;
   padding-left: 1.5em;
-  margin-bottom: 0.75em; /* consistent spacing below every heading */
+  margin-bottom: 0.25em; /* consistent spacing below every heading */
 }
 
 /* Expand/collapse icon */
@@ -67,5 +67,5 @@ details details > *:not(summary) {
 }
 
 details {
-  margin-bottom: 0.75em;
+  margin-bottom: 0.25em;
 }
