@@ -1,12 +1,13 @@
-<script>
-  document.querySelectorAll('details').forEach((detail) => {
-    detail.addEventListener('toggle', () => {
-      const content = detail.querySelector(':not(summary)');
+document.querySelectorAll("details").forEach((detail) => {
+  const content = Array.from(detail.children).filter(el => el.tagName !== "SUMMARY");
+
+  detail.addEventListener("toggle", () => {
+    content.forEach(el => {
       if (detail.open) {
-        content.style.maxHeight = content.scrollHeight + 'px';
+        el.classList.add("fade-in");
       } else {
-        content.style.maxHeight = '0';
+        el.classList.remove("fade-in");
       }
     });
   });
-</script>
+});
