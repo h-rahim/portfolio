@@ -61,3 +61,12 @@ details[open] > *:not(summary) {
   max-height: 500px; /* adjust if needed */
   opacity: 1;
 }
+
+details details > *:not(summary) {
+  line-height: 1.5;
+}
+
+details details {
+  margin-bottom: 1em;
+}
+
