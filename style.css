@@ -17,40 +17,33 @@ h1, h2, h3, h4, h5, h6 {
   color: black !important;
 }
 
+/* Remove default arrow on Chrome */
 details summary::-webkit-details-marker {
   display: none;
 }
 
+/* Base styles for all summary headings */
 details summary {
   list-style: none;
   cursor: pointer;
   position: relative;
   padding-left: 1.5em;
+  margin-bottom: 0.75em; /* consistent spacing below every heading */
 }
 
+/* Expand/collapse icon */
 details summary::before {
   content: "+";
   position: absolute;
   left: 0;
   font-weight: bold;
-  margin-bottom: 0.5em; /* Consistent space below every summary */
 }
 
 details[open] summary::before {
-  content: "×"; /* or use "-" if you prefer */
+  content: "×"; /* or "-" if you prefer */
 }
 
-/* Indent nested details inside another details */
-details details {
-  margin-left: 20px; /* shifts entire nested details block right */
-}
-
-/* Optional: add padding to nested summary text */
-details details summary {
-  padding-left: 10px;
-}
-
-/* Fade and slide animation for <details> content */
+/* Fade and slide animation for expanding content */
 details > *:not(summary) {
   max-height: 0;
   opacity: 0;
@@ -59,15 +52,20 @@ details > *:not(summary) {
 }
 
 details[open] > *:not(summary) {
-  max-height: 500px; /* adjust if needed */
+  max-height: 500px; /* adjust as needed */
   opacity: 1;
 }
 
+/* Indent nested <details> and space their content */
+details details {
+  margin-left: 20px;
+}
+
+/* Line height for nested content */
 details details > *:not(summary) {
   line-height: 1.5;
 }
 
-details details {
-  margin-bottom: 1em;
+details {
+  margin-bottom: 1.5em;
 }
-
