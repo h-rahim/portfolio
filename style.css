@@ -18,12 +18,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Remove default arrow on Chrome */
-details summary::-webkit-details-marker {
+summary::-webkit-details-marker {
   display: none;
 }
 
 /* Base styles for all summary headings */
-details summary {
+summary {
   list-style: none;
   cursor: pointer;
   position: relative;
@@ -32,25 +32,36 @@ details summary {
 }
 
 /* Expand/collapse icon */
-details summary::before {
+summary::before {
   content: "+";
   position: absolute;
   left: 0;
   font-weight: bold;
+  user-select: none;
 }
 
-details[open] summary::before {
-  content: "-"; /* or "x" if you prefer */
+/* When parent <details> is open, change "+" to "−" for that summary */
+details[open] > summary::before {
+  content: "−"; /* or "×" if you prefer */
+}
+
+/* Content fade and slide */
+details > *:not(summary) {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 1.5s ease, opacity 1.5s ease;
 }
 
 details[open] > *:not(summary) {
-  max-height: 500px; /* adjust as needed */
+  max-height: 500px; /* adjust if needed */
   opacity: 1;
 }
 
 /* Indent nested <details> and space their content */
 details details {
   margin-left: 20px;
+  margin-bottom: 0.25em; /* spacing between nested details */
 }
 
 /* Line height for nested content */
@@ -63,7 +74,7 @@ details {
 }
 
 .fade-in {
-  animation: fadeIn 0.4s ease forwards;
+  animation: fadeIn 0.8s ease forwards;
 }
 
 @keyframes fadeIn {
