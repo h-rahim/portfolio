@@ -48,3 +48,16 @@ details details {
 details details summary {
   padding-left: 10px;
 }
+
+/* Fade and slide animation for <details> content */
+details > *:not(summary) {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+details[open] > *:not(summary) {
+  max-height: 500px; /* adjust if needed */
+  opacity: 1;
+}
