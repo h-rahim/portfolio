@@ -16,5 +16,13 @@ title: Portfolio
   <details>
   <summary><strong>MkDocs Tech Docs Template</strong></summary>
   </details>
-  
+
+<summary><strong>Moogsoft</strong></summary>
+  <details>
+  <summary><strong>Integration Guides</strong></summary>
+  </details>
+  <details>
+  <summary><strong>Workflow Engine</strong></summary>
+  </details>  
+
 </details>
