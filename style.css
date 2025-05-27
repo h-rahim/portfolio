@@ -39,11 +39,12 @@ details[open] summary::before {
   content: "×"; /* or use "-" if you prefer */
 }
 
+/* Indent nested details inside another details */
 details details {
-  padding-left: 1.5em;  /* indent nested details */
+  margin-left: 20px; /* shifts entire nested details block right */
 }
 
+/* Optional: add padding to nested summary text */
 details details summary {
-  padding-left: 0.5em; /* slight indent for nested summary text */
+  padding-left: 10px;
 }
-
