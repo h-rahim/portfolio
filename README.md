@@ -1,1 +1,19 @@
+<style>
+  body {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    color: black;
+  }
 
+  h1, h2, h3, h4, h5, h6 {
+    color: black;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
