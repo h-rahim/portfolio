@@ -77,10 +77,23 @@ details {
   }
 }
 
+/* Container centering and spacing */
 .wrapper {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
+  max-width: 800px;      /* or whatever width you prefer */
+  margin: 0 auto;        /* centers horizontally */
+  padding: 2rem;         /* space inside wrapper */
+  min-height: 100vh;     /* full viewport height */
+  display: flex;
+  flex-direction: column;
 }
 
+/* Make main content take all available space */
+main {
+  flex: 1;
+}
 
+/* Footer sticks to the bottom */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+}
