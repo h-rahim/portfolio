@@ -33,6 +33,7 @@ details summary::before {
   position: absolute;
   left: 0;
   font-weight: bold;
+  margin-bottom: 0.5em; /* Consistent space below every summary */
 }
 
 details[open] summary::before {
