@@ -14,6 +14,7 @@
   }
 
   a:hover {
+    color: black; /* stays black on hover */
     text-decoration: underline;
   }
 </style>
