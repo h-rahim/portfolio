@@ -28,7 +28,8 @@ summary {
   cursor: pointer;
   position: relative;
   padding-left: 1.5em;
-  margin-bottom: 0.25em; /* consistent spacing below every heading */
+  margin-bottom: 0.5em; /* increased and consistent spacing below all summaries */
+  user-select: none;
 }
 
 /* Expand/collapse icon */
@@ -47,24 +48,29 @@ details[open] > summary::before {
 
 /* Content fade and slide */
 details > *:not(summary) {
+  max-height: 0;
   opacity: 0;
+  overflow: hidden;
   transform: translateY(-5px);
-  max-height: none; /* remove max-height transitions */
-  overflow: visible; /* allow full height */
-  transition: opacity 1.5s ease, transform 1.5s ease;
-  display: none; /* hide by default */
+  transition: max-height 0.8s ease, opacity 0.8s ease, transform 0.8s ease;
 }
 
+/* Expanded content */
 details[open] > *:not(summary) {
+  max-height: 1000px; /* large enough for your content */
   opacity: 1;
   transform: translateY(0);
-  display: block; /* show content when open */
 }
 
-/* Indent nested <details> and space their content */
+/* Indent nested <details> and apply consistent spacing */
 details details {
   margin-left: 20px;
-  margin-bottom: 0.25em; /* spacing between nested details */
+  margin-bottom: 0.5em; /* match parent spacing */
+}
+
+/* Make nested summaries match parent summary margin */
+details details summary {
+  margin-bottom: 0.5em; /* same spacing as top-level summaries */
 }
 
 /* Line height for nested content */
@@ -73,7 +79,7 @@ details details > *:not(summary) {
 }
 
 details {
-  margin-bottom: 0.25em;
+  margin-bottom: 0.5em; /* match summary spacing */
 }
 
 .fade-in {
@@ -93,10 +99,10 @@ details {
 
 /* Container centering and spacing */
 .wrapper {
-  max-width: 800px;      /* or whatever width you prefer */
-  margin: 0 auto;        /* centers horizontally */
-  padding: 2rem;         /* space inside wrapper */
-  min-height: 100vh;     /* full viewport height */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
