@@ -47,15 +47,18 @@ details[open] > summary::before {
 
 /* Content fade and slide */
 details > *:not(summary) {
-  max-height: 0;
   opacity: 0;
-  overflow: hidden;
-  transition: max-height 1.5s ease, opacity 1.5s ease;
+  transform: translateY(-5px);
+  max-height: none; /* remove max-height transitions */
+  overflow: visible; /* allow full height */
+  transition: opacity 1.5s ease, transform 1.5s ease;
+  display: none; /* hide by default */
 }
 
 details[open] > *:not(summary) {
-  max-height: 500px; /* adjust if needed */
   opacity: 1;
+  transform: translateY(0);
+  display: block; /* show content when open */
 }
 
 /* Indent nested <details> and space their content */
