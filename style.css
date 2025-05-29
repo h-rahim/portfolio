@@ -98,3 +98,16 @@ details summary {
   width: 100%;
 }
 
+/* Base spacing for all details */
+details {
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid transparent; /* prevents margin collapsing */
+}
+
+/* Indent and apply same spacing for nested details */
+details details {
+  margin-left: 20px;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+}
