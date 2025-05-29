@@ -46,22 +46,6 @@ details[open] > summary::before {
   content: "−"; /* or "×" if you prefer */
 }
 
-/* Content fade and slide */
-details > *:not(summary) {
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-  transform: translateY(-5px);
-  transition: max-height 0.8s ease, opacity 0.8s ease, transform 0.8s ease;
-}
-
-/* Expanded content */
-details[open] > *:not(summary) {
-  max-height: 1000px; /* large enough for your content */
-  opacity: 1;
-  transform: translateY(0);
-}
-
 /* Indent nested <details> and apply consistent spacing */
 details details {
   margin-left: 20px;
@@ -80,21 +64,6 @@ details details > *:not(summary) {
 
 details {
   margin-bottom: 0.5em; /* match summary spacing */
-}
-
-.fade-in {
-  animation: fadeIn 0.8s ease forwards;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-5px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 /* Container centering and spacing */
