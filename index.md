@@ -13,6 +13,9 @@ title: Portfolio
   <summary><strong>Analytical Platform User Guidance</strong></summary>
   </details>
   <details>
+  <summary><strong>Data Platform Front Door</strong></summary>
+  </details>
+  <details>
   <summary><strong>MkDocs Tech Docs Template</strong></summary>
   </details>
 </details>
