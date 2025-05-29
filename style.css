@@ -86,3 +86,15 @@ footer {
   text-align: center;
   padding: 1rem 0;
 }
+
+details {
+  padding-bottom: 0.5em;        /* ensures spacing inside open details */
+  margin-bottom: 0.5em;         /* spacing between details blocks */
+  border-bottom: 1px solid transparent; /* prevents margin collapse */
+}
+
+details summary {
+  display: inline-block;        /* avoids summary collapsing margins */
+  width: 100%;
+}
+
