@@ -10,7 +10,7 @@ title: Portfolio
 <details>
 <summary><strong>Ministry of Justice</strong></summary>
   <details>
-  <summary><strong>Data Platform Front Door</strong></summary>
+  <summary><strong>Data Platform Front Door (prototype)</strong></summary>
     <div class="thumbnail-gallery">
       <img src="{{ '/assets/images/Data Platform Front Door.png' | relative_url }}" alt="Data Platform homepage"/>
       <img src="{{ '/assets/images/Data Platform About.png' | relative_url }}" alt="An Overview of the Data Platform"/>
