@@ -17,6 +17,11 @@ title: Portfolio
   </details>
   <details>
   <summary><strong>MkDocs Tech Docs Template</strong></summary>
+    <div class="thumbnail-gallery">
+      <img src="{{ '/assets/images/MkDocsTDT.png' | relative_url }}" alt="MkDocs Tech Docs Template homepage"/>
+      <img src="{{ '/assets/images/MkDocsTDTQuickstart1.png' | relative_url }}" alt="MkDocs Tech Docs Template Quickstart Guide"/>
+      <img src="{{ '/assets/images/MkDocsTDTQuickstart2.png' | relative_url }}" alt="MkDocs Tech Docs Template Quickstart Guide (continued)"/>
+    </div>
   </details>
 </details>
 
