@@ -30,10 +30,12 @@ title: Portfolio
   <details>
   <summary><strong>Integration Guides</strong></summary>
     <div class="thumbnail-gallery">
-      <img src="{{ '/assets/images/Integrations and LAMs.png' | relative_url }}" alt="An Overview of Moogsoft's Integrations and LAMs"/>
+      <img src="{{ '/assets/images/Integrations and LAMs1.png' | relative_url }}" alt="An Overview of Moogsoft's Integrations and LAMs"/>
+      <img src="{{ '/assets/images/Integrations and LAMs2.png' | relative_url }}" alt="An Overview of Moogsoft's Integrations and LAMs (continued)"/>
       <img src="{{ '/assets/images/Configure the AWS CloudWatch Integration.png' | relative_url }}" alt="Steps to configure the AWS CloudWatch Integration in the Moogsoft UI"/>
       <img src="{{ '/assets/images/Configure the AWS CloudWatchLAM1.png' | relative_url }}" alt="Steps to configure the AWS CloudWatch LAM file"/>
-      <img src="{{ '/assets/images/Configure the AWS CloudWatchLAM1.png' | relative_url }}" alt="Steps to configure the AWS CloudWatch LAM file (continued)"/>
+      <img src="{{ '/assets/images/Configure the AWS CloudWatchLAM2.png' | relative_url }}" alt="Steps to configure the AWS CloudWatch LAM file (continued)"/>
+      <img src="{{ '/assets/images/Configure the AWS CloudWatchLAM3.png' | relative_url }}" alt="Steps to configure the AWS CloudWatch LAM file (continued)"/>
     </div>
   </details>
   <details>
