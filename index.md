@@ -40,6 +40,12 @@ title: Portfolio
   </details>
   <details>
   <summary><strong>Workflow Engine</strong></summary>
+    <div class="thumbnail-gallery">
+      <img src="{{ '/assets/images/Workflow Engine1.png' | relative_url }}" alt="A function for Moogsoft's Workflow Engine"/>
+      <img src="{{ '/assets/images/Workflow Engine2.png' | relative_url }}" alt="How to configure the Moogsoft Workflow Engine Function"/>
+      <img src="{{ '/assets/images/Workflow Engine3.png' | relative_url }}" alt="An example configuration of the Moogsoft Workflow Engine Function"/>
+      <img src="{{ '/assets/images/Workflow Engine4.png' | relative_url }}" alt="Example configurations of the Moogsoft Workflow Engine Function"/>
+    </div>
   </details>  
 </details>
 
