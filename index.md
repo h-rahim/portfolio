@@ -11,6 +11,12 @@ title: Portfolio
 <summary><strong>Ministry of Justice</strong></summary>
   <details>
   <summary><strong>Data Platform Front Door</strong></summary>
+    <div class="thumbnail-gallery">
+      <img src="{{ '/assets/images/Data Platform Front Door.png' | relative_url }}" alt="Data Platform homepage"/>
+      <img src="{{ '/assets/images/Data Platform About.png' | relative_url }}" alt="An Overview of the Data Platform"/>
+      <img src="{{ '/assets/images/Data Platform About2.png' | relative_url }}" alt="An Overview of the Data Platform (continued)"/>
+      <img src="{{ '/assets/images/Data Platform ADRs.png' | relative_url }}" alt="Example index of Architectural Decision Records"/>
+    </div>
   </details>
   <details>
   <summary><strong>MkDocs Tech Docs Template</strong></summary>
