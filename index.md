@@ -24,7 +24,6 @@ title: Portfolio
 <summary><strong>Moogsoft</strong></summary>
   <details>
   <summary><strong>Integration Guides</strong></summary>
-    <summary>Gallery Section</summary>
     <div class="thumbnail-gallery">
     <img src="/assets/images/Integrations and LAMs.png" alt="An Overview of Moogsoft's Integrations and LAMs"/>
     <img src="/assets/images/Configure the AWS CloudWatch Integration.png" alt="Steps to configure the AWS CloudWatch Integration in the Moogsoft UI"/>
