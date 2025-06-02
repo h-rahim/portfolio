@@ -161,3 +161,14 @@ details > details:first-child {
   box-shadow: 0 0 15px rgba(0,0,0,0.5);
   cursor: zoom-out;
 }
+
+.thumbnail-gallery img {
+  width: 150px;
+  height: auto;
+  margin: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  image-rendering: crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+}
