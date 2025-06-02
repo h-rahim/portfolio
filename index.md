@@ -10,9 +10,6 @@ title: Portfolio
 <details>
 <summary><strong>Ministry of Justice</strong></summary>
   <details>
-  <summary><strong>Analytical Platform User Guidance</strong></summary>
-  </details>
-  <details>
   <summary><strong>Data Platform Front Door</strong></summary>
   </details>
   <details>
